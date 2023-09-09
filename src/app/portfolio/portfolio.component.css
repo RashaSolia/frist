@@ -1,0 +1,33 @@
+.line{
+    height: 4px;
+    width: 80px;
+}
+.layer {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #1abc9ce6;
+    opacity: 0;
+
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+.item:hover .layer{
+    opacity: 0.8;
+}
+#fixed-box{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.7);
+    }
+    #parent{
+        width:40%;
+        }
+        

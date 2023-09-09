@@ -1,0 +1,19 @@
+<h1 class="text-center m-3 fw-bolder">CONTACT COMPONENT</h1>
+<div class="d-flex align-items-center justify-content-center mb-3">
+    <div class="line me-3 " [style.background-color]="'rgb(44,62,80)'">
+    </div>
+    <i class="fa-solid fa-star"></i>
+    <div class="line ms-3 " [style.background-color]="'rgb(44,62,80)'"></div>
+  </div>
+
+<div class="container w-50 p-5">
+  <p class="mx-5 d-none" id="userName"  [style.color]="'rgb(26,188,156)'" >user name:</p>
+  <input  type="text"   (keydown)="username()" class=" form-control m-5 border-bottom border-0 " placeholder="userName">
+  <p class="mx-5 d-none" id="userAge"  [style.color]="'rgb(26,188,156)'">user age:</p>
+  <input type="number" (keydown)="userage()"  class="form-control m-5 border-bottom border-0 " placeholder="userAge">
+  <p class="mx-5 d-none"  id="userEmail" [style.color]="'rgb(26,188,156)'">user email:</p>
+  <input type="email" (keydown)="usermail()"  class="form-control m-5 border-bottom border-0 " placeholder="userEmail">
+  <p class="mx-5 d-none" id="userPass"  [style.color]="'rgb(26,188,156)'">user password:</p>
+  <input type="password"  (keydown)="userpass()" class="form-control m-5 border-bottom border-0 " placeholder="userPassword">
+  <button class="btn text-light mx-5" [style.background-color]="'rgb(26,188,156)'">send Message </button>
+</div>
